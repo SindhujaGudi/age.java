@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class age {
+ 
+    public static void main (String[] args) 
+    {
+        String name;
+        int personage;
+        
+	Scanner in = new Scanner(System.in);
+	
+	System.out.println("Hello!what is your name");
+        name = in.nextLine(); 
+        System.out.println("Ok," + name + ",how old are you?" );
+        personage = in.nextInt();
+
+        if(personage<16){
+            System.out.println("You are not allowed to drive at the moment," +name);
+            System.out.println("You are not allowed to Vote at the moment," +name);
+            System.out.println("You are not allowed to rent a car at the moment," +name);
+        
+        }else if(personage<18){
+                System.out.println("You are not allowed to Vote at the moment," +name);
+                System.out.println("You are not allowed to rent a car at the moment," +name);
+
+         }else if(personage<25){
+                System.out.println("You are not allowed to rent a car at the moment," +name);
+        
+        }else if(personage>=25){
+                System.out.println("You can do anything that is legal," +name); 
+        
+         }    
+        	
+     }
+	
+}
